@@ -2,6 +2,9 @@ package ec.edu.espol;
 
 public class Profesor extends PersonalAcademico{
      
+    public Profesor(String usuario, String contrasena, String nombre, String apellido) {
+        super(usuario, contrasena, nombre, apellido);
+    }
       
     public void cargarActividadSumativa(Curso curso, ActividadSumativa actividadSumativa){
         //Lógica para cargar una actividad sumativa en un curso       
