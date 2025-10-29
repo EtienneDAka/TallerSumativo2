@@ -3,11 +3,11 @@ package ec.edu.espol;
 import java.util.LinkedList;
 
 public class Profesor extends PersonalAcademico{
-    LinkedList<Curso> cursos;
+    private LinkedList<Curso> cursosACargo;
      
     public Profesor(String usuario, String contrasena, String nombre, String apellido) {
         super(usuario, contrasena, nombre, apellido);
-        this.cursos = new LinkedList<>();
+        this.cursosACargo = new LinkedList<>();
     }
       
     public void cargarActividadSumativa(Curso curso, ActividadSumativa actividadSumativa){
@@ -27,7 +27,7 @@ public class Profesor extends PersonalAcademico{
     }
 
     public void addCurso(Curso curso) {
-        this.cursos.add(curso);
+        this.cursosACargo.add(curso);
     }
 
 

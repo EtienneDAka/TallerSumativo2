@@ -14,7 +14,7 @@ public class Incidente {
     protected LocalDateTime fecha_cerrado;
     protected String tipo;
     private Usuario responsable;
-    protected LinkedList<Incidente> incidentes;
+    protected PersonalAcademico beneficiario;
 
 
     public Incidente(int id, LocalDateTime fechaHora, String estado, String titulo, String descripcion, String tipo) {
