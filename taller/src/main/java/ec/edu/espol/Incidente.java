@@ -2,7 +2,6 @@ package ec.edu.espol;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.LinkedList;
 
 public class Incidente {
     protected int id;
