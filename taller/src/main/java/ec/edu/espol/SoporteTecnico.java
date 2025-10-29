@@ -16,4 +16,5 @@ public class SoporteTecnico extends Usuario{
     public void derivarProblemaDeGestion(Administrador admin){
         // Lógica para derivar problemas de gestión al administrador
     }
+    
 }

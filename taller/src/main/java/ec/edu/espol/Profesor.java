@@ -30,6 +30,14 @@ public class Profesor extends PersonalAcademico{
         this.cursosACargo.add(curso);
     }
 
+    public LinkedList<Curso> getCursosACargo() {
+        return cursosACargo;
+    }
+
+    public void setCursosACargo(LinkedList<Curso> cursosACargo) {
+        this.cursosACargo = cursosACargo;
+    }
+
 
 
     

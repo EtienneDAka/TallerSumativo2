@@ -22,4 +22,13 @@ public class Estudiante extends PersonalAcademico{
     public void agregarCursoInscrito(Curso c){
         cursosInscritos.add(c);
     }
+
+    public LinkedList<Curso> getCursosInscritos() {
+        return cursosInscritos;
+    }
+
+    public void setCursosInscritos(LinkedList<Curso> cursosInscritos) {
+        this.cursosInscritos = cursosInscritos;
+    }
+    
 }

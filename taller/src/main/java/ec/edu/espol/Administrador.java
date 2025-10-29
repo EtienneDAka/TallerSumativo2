@@ -20,4 +20,5 @@ public class Administrador extends Usuario {
     public void asignarRespondable(Curso curso, Profesor responsable){
         // Lógica para asignar un respondable a un curso
     }
+    
 }

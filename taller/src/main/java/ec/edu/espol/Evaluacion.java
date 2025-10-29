@@ -9,4 +9,10 @@ public class Evaluacion extends ActividadSumativa{
         super(titulo, fechaDeEntrega, puntajeMaximo, contenido, id);
         this.limiteDetiempo = limiteDetiempo;
     }
+    public int getLimiteDetiempo() {
+        return limiteDetiempo;
+    }
+    public void setLimiteDetiempo(int limiteDetiempo) {
+        this.limiteDetiempo = limiteDetiempo;
+    }
 }

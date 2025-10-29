@@ -9,26 +9,78 @@ public class Curso {
     private Boolean estadoDisponible;
     private LinkedList<Foro> foros;
     private LinkedList<ActividadSumativa> actividadesSumativas;
-    private LinkedList<Estudiante> estudiantesEnEsperaDeInscripcion; 
-    private LinkedList<Estudiante> estudiantesInscritos;
-    
-    public Curso(String id, String nombre, Boolean estadoDisponible) {
+    private Profesor responsable;
+
+
+    public Curso(String id, String nombre, Boolean estadoDisponible, Profesor responsable) {
         this.id = id;
         this.nombre = nombre;
         this.estadoDisponible = estadoDisponible;
         this.foros = new LinkedList<>();
         this.actividadesSumativas = new LinkedList<>();
-        this.estudiantesEnEsperaDeInscripcion = new LinkedList<>();
-    }
-
-    public void agregarEstudiantesEnEspera(Estudiante e){
-        estudiantesEnEsperaDeInscripcion.add(e);
+        this.responsable = responsable;
     }
 
 
-    public void agregarEstudiantesInscritos(Estudiante e){
-        estudiantesInscritos.add(e);
+    public String getId() {
+        return id;
     }
+
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+
+    public String getNombre() {
+        return nombre;
+    }
+
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+
+    public Boolean getEstadoDisponible() {
+        return estadoDisponible;
+    }
+
+
+    public void setEstadoDisponible(Boolean estadoDisponible) {
+        this.estadoDisponible = estadoDisponible;
+    }
+
+
+    public LinkedList<Foro> getForos() {
+        return foros;
+    }
+
+
+    public void setForos(LinkedList<Foro> foros) {
+        this.foros = foros;
+    }
+
+
+    public LinkedList<ActividadSumativa> getActividadesSumativas() {
+        return actividadesSumativas;
+    }
+
+
+    public void setActividadesSumativas(LinkedList<ActividadSumativa> actividadesSumativas) {
+        this.actividadesSumativas = actividadesSumativas;
+    }
+
+
+    public Profesor getResponsable() {
+        return responsable;
+    }
+
+
+    public void setResponsable(Profesor responsable) {
+        this.responsable = responsable;
+    }
+
 
 
 

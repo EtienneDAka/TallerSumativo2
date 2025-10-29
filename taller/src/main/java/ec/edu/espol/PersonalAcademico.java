@@ -23,4 +23,13 @@ public class PersonalAcademico extends Usuario {
     public void comentarEnForo(Foro foro, String comentario){
         // Lógica para comentar en un foro
     }
+
+    public LinkedList<Incidente> getIncidentes() {
+        return incidentes;
+    }
+
+    public void setIncidentes(LinkedList<Incidente> incidentes) {
+        this.incidentes = incidentes;
+    }
+    
 }
