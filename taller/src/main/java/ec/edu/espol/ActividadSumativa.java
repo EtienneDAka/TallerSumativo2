@@ -2,7 +2,7 @@ package ec.edu.espol;
 
 import java.time.LocalDateTime;
 
-public class ActividadSumativa {
+public abstract class ActividadSumativa {
     protected String titulo;
     protected LocalDateTime fechaDeEntrega;
     protected float puntajeMaximo;
